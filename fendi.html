@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Merchant's Shop</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://klump-js.netlify.app/klump.js" defer></script>
+        <!-- <script src="https://js.useklump.com/klump.js" defer></script> -->
+        <!-- // <script src="https://staging-js.useklump.com/klump.js" defer></script> -->
+        <!-- <script src="D:\Codes\myCodes\Al\Klump\Personal\klump-js\klump.js" defer></script> -->
+        <script src="products.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="bg-black p-4 text-center text-white font-bold">
+                <p>Shop now. Pay with Klump</p>
+            </div>
+            <header
+                class="mx-4 lg:mx-12 flex items-center justify-between py-8"
+            >
+                <h4 class="text-2xl leading-4 font-bold">
+                    <a href="index.html">Merchant Shop</a>
+                </h4>
+                <div id="cart" class="relative cursor-pointer">
+                    <div class="absolute" style="right: 0px; top: 0px">
+                        <div
+                            class="
+                                flex
+                                items-center
+                                justify-center
+                                bg-black
+                                rounded-full
+                                text-white
+                                font-bold
+                                text-sm
+                                h-4
+                                w-4
+                            "
+                        >
+                            <span class="block">1</span>
+                        </div>
+                    </div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="height: 40px; width: 40px"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            d="M454.493,151H134.039L124.7,96.651A50.224,50.224,0,0,0,84.753,56L59.372,51.176a10,10,0,1,0-3.733,19.648L81.02,75.646a30.134,30.134,0,0,1,23.967,24.392l45.848,266.79a48.668,48.668,0,1,0,56.037,16.388H332.463a48.635,48.635,0,1,0,39.876-19.48,9.987,9.987,0,0,0-3.166-.52H170.509l-9.35-54.407H375.948a50.179,50.179,0,0,0,46.933-32.758l41-111.6A10,10,0,0,0,454.493,151ZM167.948,441a28.644,28.644,0,1,1,28.644-28.644A28.677,28.677,0,0,1,167.948,441Zm232.086-28.644a28.644,28.644,0,1,1-28.644-28.644A28.677,28.677,0,0,1,400.034,412.356Zm4.074-143.2a30.107,30.107,0,0,1-28.16,19.655H157.722L137.476,171h302.69Z"
+                        ></path>
+                    </svg>
+                </div>
+            </header>
+            <div class="mx-4 lg:mx-12 my-8 relative">
+                <!-- product checkout -->
+                <div
+                    id="product-checkout"
+                    class="
+                        transition-opacity
+                        absolute
+                        opacity-0
+                        bg-white
+                        shadow-lg
+                        rounded-lg
+                        w-full
+                        lg:w-1/3
+                        p-8
+                        z-1
+                    "
+                    style="top: -60px; right: 0px"
+                >
+                    <div class="flex items-center justify-between">
+                        <h4 class="uppercase">Fendi Shoes</h4>
+                        <svg
+                            style="height: 20px; width: 20px"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M 12 6.9296875 L 5.9296875 13 L 7.4296875 14.5 L 12 9.9296875 L 16.570312 14.5 L 18.070312 13 L 12 6.9296875 z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="flex justify-between">
+                        <div class="flex w-7/12">
+                            <div>
+                                <img
+                                    src="https://cdn-images.farfetch-contents.com/13/67/27/32/13672732_21610772_1000.jpg"
+                                    class="h-20 w-20 object-cover"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="flex flex-col px-2 justify-between">
+                                <span class="block">Original Fendi Shoes</span>
+                                <div class="flex">
+                                    <span
+                                        class="
+                                            block
+                                            font-semibold
+                                            mr-2
+                                            text-xl text-gray-300
+                                        "
+                                        >-</span
+                                    >
+                                    <span
+                                        class="
+                                            block
+                                            font-semibold
+                                            mr-2
+                                            text-xl text-gray-800
+                                        "
+                                        >1</span
+                                    >
+                                    <span
+                                        class="
+                                            block
+                                            font-semibold
+                                            text-xl text-gray-600
+                                        "
+                                        >+</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-end w-4/12">
+                            <span class="block text-xl">&#8358;10000</span>
+                        </div>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-semibold block">Subtotal</span>
+                        <span class="block text-xl">&#8358;10000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold block">Shipping</span>
+                        <span class="block text-xl">&#8358;100</span>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="flex items-center justify-between mb-2">
+                        <span
+                            class="
+                                font-semibold
+                                block
+                                font-bold
+                                text-xl
+                                uppercase
+                            "
+                            >Total</span
+                        >
+                        <span class="block text-2xl font-bold"></span>
+                            <!-- &#8358; -->
+                            <input
+                                type="number"
+                                value="10100"
+                                id="amount"
+                                style="width: 80px"
+                            />
+                        </span>
+                    </div>
+                    <!-- klump calculator -->
+                    <!-- <div id="klump__calc" onchange="klumpCalculate(4000)"></div> -->
+                    <button
+                        class="
+                            bg-black
+                            text-white
+                            font-bold
+                            w-full
+                            py-3
+                            rounded-lg
+                        "
+                    >
+                        Checkout
+                    </button>
+                    <!-- klump checkout -->
+                    <div id="klump__checkout"></div>
+                    <!-- klump advert   -->
+                    <div id="klump__ad">
+                        <input type="number" value="10100" id="klump__price">
+                        <input type="text" value="klp_pk_test_e4aaa1a8e96644ad9af23fa453ddd6ffa39a8233a88c4b93860f119c8cd9a332" id="klump__merchant__public__key">
+                        <input type="text" value="NGN" id="klump__currency">
+                    </div>
+                </div>
+                <!-- end product checkout -->
+                <div
+                    id="products"
+                    class="lg:flex lg:justify-between space-y-6 lg:space-y-0"
+                >
+                    <div
+                        class="
+                            block
+                            w-full
+                            lg:w-8/12
+                            border border-gray-300
+                            shadow-sm
+                            rounded-lg
+                        "
+                    >
+                        <div class="block p-8">
+                            <div class="flex flex-wrap space-x-2">
+                                <img
+                                    class="h-80 w-80 object-cover"
+                                    src="https://cdn-images.farfetch-contents.com/13/67/27/32/13672732_21610772_1000.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    class="h-80 w-80 object-cover"
+                                    src="https://cdn-images.farfetch-contents.com/13/67/27/32/13672732_21610776_1000.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="flex items-center justify-between my-4">
+                                <span class="block font-bold">Fendi Shoes</span>
+                                <span class="block font-semibold"
+                                    >Price: &#8358;10000</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block w-full lg:w-3/12">
+                        <h4 class="text-xl">Fendi Shoes</h4>
+                        <span class="block font-bold text-2xl"
+                            >Price: &#8358;10000</span
+                        >
+                        <!-- klump advert   -->
+                        <!-- <div id="klump__ad"></div> -->
+                        <img
+                            class="h-80 w-80 object-contain"
+                            src="https://cdn-images.farfetch-contents.com/13/67/27/32/13672732_21610776_1000.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-black text-center py-8 text-white font-bold">
+                <p class="text-xl leading-3">Merchant's Shop Footer</p>
+            </footer>
+        </div>
+        <!-- <script src="http://staging-asset.useklump.com/v1/klump.js"></script> -->
+        <!-- <script src="D:\Codes\myCodes\Al\Klump\Personal\klump-js\klump.js"></script> -->
+        <script>
+            
+            // merchantId: '830f630d-7540-4158-aff2-c17f010778d4',
+            // publicKey: 'klp_pk_6ae26b4dc3574cc0a9fbb9e6a43aaccb',
+            // publicKey: 'klp_pk_d7fc03e85f1b41ceb61671beeab2e2bb',
+            // publicKey: 'klp_pk_test_a1f7233d02d54fa69eaf9c674c7114e0830f630d75404158aff2c17f010778d4',
+            // publicKey: 'klp_pk_test_a1f7233d02d54fa69eaf9c674c7114e0830f630d75404158aff2c17f010778d4',
+            // publicKey: 'klp_pk_33b7fb29dd714da792d75a05bd30a7f5',
+            const payload = {
+                publicKey: 
+                'klp_pk_test_e4aaa1a8e96644ad9af23fa453ddd6ffa39a8233a88c4b93860f119c8cd9a332',
+                data: {
+                    amount: 40000,
+                    // shipping_fee: 1000,
+                    merchant_reference: "EM370-1661263197",
+                    meta_data: {
+                        "customer": "Samuel Olamide",
+                        "email": "emmybunchgz@gmail.com",
+                        "customer1": "Obama",
+                        "email1": "obama@gmail.com",
+                        "customer2": "Osama",
+                        "email2": "osama@gmail.com"
+                    },
+                    currency: 'NGN',
+                    redirect_url: 'https://www.useklump.com',
+                    // source: 'mobile',
+                    // shipping_fee: 100,
+                    partner: 'Paga',
+                    items: [
+                        {
+                            "image_url": "https://pepperest.com/EscrowBackend/storage/products/430/1649243030.jpg",
+                            "item_url": "https://pepperest.com/EscrowBackend/storage/products/430/1649243030.jpg",
+                            "name": "Paradox Perfume",
+                            "unit_price": 20000,
+                            "quantity": 1
+                        },
+                        {
+                            "image_url": "https://pepperest.com/EscrowBackend/storage/products/429/1649242907.jpg",
+                            "item_url": "https://pepperest.com/EscrowBackend/storage/products/429/1649242907.jpg",
+                            "name": "BODECIA FRAGRANCE VILLE",
+                            "unit_price": 10000,
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Pepperest Fee (2.5% of Order)",
+                            "quantity": 1,
+                            "unit_price": 10000
+                        }
+                    ],
+                },
+                onSuccess: (data) => {
+                    console.log('html onSuccess will be handled by the merchant');
+                    console.log(data);
+                    ok = data;
+                    return data;
+                },
+                onError: (data) => {
+                    console.log('html onError will be handled by the merchant');
+                    console.log(data);
+                },
+                onLoad: (data) => {
+                    console.log('html onLoad will be handled by the merchant');
+                    console.log(data);
+                },
+                onOpen: (data) => {
+                    console.log('html OnOpen will be handled by the merchant');
+                    console.log(data);
+                },
+                onClose: (data) => {
+                    console.log('html onClose will be handled by the merchant');
+                    console.log(data);
+                }
+            }
+            document.getElementById('klump__checkout').addEventListener('click', function () {
+                console.log("payload", payload);
+                const klump = new Klump(payload);
+            })
+            
+            const cartButton = document.getElementById('cart');
+            const productCheckout = document.getElementById('product-checkout');
+            cartButton.addEventListener('click', () => {
+                const hidden = productCheckout.classList.contains('opacity-0');
+                if (hidden) {
+                    productCheckout.classList.remove('opacity-0');
+                    productCheckout.classList.add('opacity-1');
+                } else {
+                    productCheckout.classList.remove('opacity-1');
+                    productCheckout.classList.add('opacity-0');
+                }
+            });
+        </script>
+    </body>
+</html>

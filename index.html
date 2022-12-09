@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Merchant's Shop</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <script src="products.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="bg-black p-4 text-center text-white font-bold">
+                <p>Shop now. Pay with Klump</p>
+            </div>
+            <header
+                class="mx-4 lg:mx-12 flex items-center justify-between py-8"
+            >
+                <h4 class="text-2xl leading-4 font-bold">
+                    <a href="index.html">Merchant Shop</a>
+                </h4>
+                <div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="height: 40px; width: 40px"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            d="M454.493,151H134.039L124.7,96.651A50.224,50.224,0,0,0,84.753,56L59.372,51.176a10,10,0,1,0-3.733,19.648L81.02,75.646a30.134,30.134,0,0,1,23.967,24.392l45.848,266.79a48.668,48.668,0,1,0,56.037,16.388H332.463a48.635,48.635,0,1,0,39.876-19.48,9.987,9.987,0,0,0-3.166-.52H170.509l-9.35-54.407H375.948a50.179,50.179,0,0,0,46.933-32.758l41-111.6A10,10,0,0,0,454.493,151ZM167.948,441a28.644,28.644,0,1,1,28.644-28.644A28.677,28.677,0,0,1,167.948,441Zm232.086-28.644a28.644,28.644,0,1,1-28.644-28.644A28.677,28.677,0,0,1,400.034,412.356Zm4.074-143.2a30.107,30.107,0,0,1-28.16,19.655H157.722L137.476,171h302.69Z"
+                        ></path>
+                    </svg>
+                </div>
+            </header>
+            <div class="mx-4 lg:mx-12 my-8">
+                <div
+                    id="products"
+                    class="
+                        lg:flex lg:items-center lg:justify-between
+                        space-y-6
+                        lg:space-y-0
+                    "
+                >
+                    <div
+                        class="
+                            block
+                            w-full
+                            lg:w-5/12
+                            border border-gray-300
+                            shadow-sm
+                            rounded-lg
+                        "
+                    >
+                        <a href="fendi.html" class="block p-8">
+                            <img
+                                class="h-80 w-80 object-cover"
+                                src="https://cdn-images.farfetch-contents.com/13/67/27/32/13672732_21610772_1000.jpg"
+                                alt=""
+                            />
+                            <div class="flex items-center justify-between my-4">
+                                <span class="block font-bold">Fendi Shoes</span>
+                                <span class="block font-semibold"
+                                    >Price: &#8358;4000</span
+                                >
+                            </div>
+                            <button
+                                class="
+                                    my-2
+                                    bg-green-600
+                                    rounded-lg
+                                    w-full
+                                    p-2
+                                    text-center
+                                    font-bold
+                                    text-white
+                                "
+                            >
+                                Add to Cart
+                            </button>
+                        </a>
+                    </div>
+                    <div
+                        class="
+                            block
+                            w-full
+                            lg:w-5/12
+                            border border-gray-300
+                            shadow-sm
+                            rounded-lg
+                        "
+                    >
+                        <a href="gucci.html" class="block p-8">
+                            <img
+                                class="h-80 w-80 object-cover"
+                                src="https://cdn-images.farfetch-contents.com/14/83/62/85/14836285_24015797_1000.jpg"
+                                alt=""
+                            />
+                            <div class="flex items-center justify-between my-4">
+                                <span class="block font-bold">Gucci Bags</span>
+                                <span class="block font-semibold"
+                                    >Price: &#8358;8000</span
+                                >
+                            </div>
+                            <button
+                                class="
+                                    my-2
+                                    bg-green-600
+                                    rounded-lg
+                                    w-full
+                                    p-2
+                                    text-center
+                                    font-bold
+                                    text-white
+                                "
+                            >
+                                Add to Cart
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-black text-center py-8 text-white font-bold">
+                <p class="text-xl leading-3">Merchant's Shop Footer</p>
+            </footer>
+        </div>
+    </body>
+</html>
