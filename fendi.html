@@ -241,25 +241,12 @@
                 <p class="text-xl leading-3">Merchant's Shop Footer</p>
             </footer>
         </div>
-        <!-- <script src="http://staging-asset.useklump.com/v1/klump.js"></script> -->
-        <!-- <script src="D:\Codes\myCodes\Al\Klump\Personal\klump-js\klump.js"></script> -->
         <script>
-            
-            // merchantId: '830f630d-7540-4158-aff2-c17f010778d4',
-            // publicKey: 'klp_pk_6ae26b4dc3574cc0a9fbb9e6a43aaccb',
-            // publicKey: 'klp_pk_d7fc03e85f1b41ceb61671beeab2e2bb',
-            // publicKey: 'klp_pk_test_a1f7233d02d54fa69eaf9c674c7114e0830f630d75404158aff2c17f010778d4',
-            // publicKey: 'klp_pk_test_a1f7233d02d54fa69eaf9c674c7114e0830f630d75404158aff2c17f010778d4',
-            // publicKey: 'klp_pk_33b7fb29dd714da792d75a05bd30a7f5',
             const payload = {
                 publicKey: 
                 'klp_pk_test_e4aaa1a8e96644ad9af23fa453ddd6ffa39a8233a88c4b93860f119c8cd9a332',
-                // publicKey: 
-                // 'klp_pk_test_c89ebf634f5f4a77a0b64b2059c305a2cf616ffb3fc14cc4870186b492feb477',
                 data: {
-                    amount: 40000,
-                    // shipping_fee: 1000,
-                    merchant_reference: "EM370-1661263197",
+                    amount: 2861,
                     meta_data: {
                         "customer": "Samuel Olamide",
                         "email": "emmybunchgz@gmail.com",
@@ -269,31 +256,17 @@
                         "email2": "osama@gmail.com"
                     },
                     currency: 'NGN',
-                    redirect_url: 'https://www.useklump.com',
-                    // source: 'mobile',
-                    // shipping_fee: 100,
-                    // partner: 'Paga',
+                    redirect_url: 'https://www.mypaga.com/',
+                    merchant: 'Paga',
                     items: [
                         {
                             "image_url": "https://pepperest.com/EscrowBackend/storage/products/430/1649243030.jpg",
                             "item_url": "https://pepperest.com/EscrowBackend/storage/products/430/1649243030.jpg",
                             "name": "Paradox Perfume",
-                            "unit_price": 20000,
+                            "unit_price": 2861,
                             "quantity": 1
-                        },
-                        {
-                            "image_url": "https://pepperest.com/EscrowBackend/storage/products/429/1649242907.jpg",
-                            "item_url": "https://pepperest.com/EscrowBackend/storage/products/429/1649242907.jpg",
-                            "name": "BODECIA FRAGRANCE VILLE",
-                            "unit_price": 10000,
-                            "quantity": 1
-                        },
-                        {
-                            "name": "Pepperest Fee (2.5% of Order)",
-                            "quantity": 1,
-                            "unit_price": 10000
                         }
-                    ],
+                    ]
                 },
                 onSuccess: (data) => {
                     console.log('html onSuccess will be handled by the merchant');
