@@ -242,11 +242,15 @@
             </footer>
         </div>
         <script>
+            function generateRandomAmount() {
+                return Math.floor(Math.random() * (20000 - 1000 + 1)) + 1000;
+            }
+            const amount = generateRandomAmount();
             const payload = {
                 publicKey: 
                 'klp_pk_test_e4aaa1a8e96644ad9af23fa453ddd6ffa39a8233a88c4b93860f119c8cd9a332',
                 data: {
-                    amount: 2861,
+                    amount: amount,
                     meta_data: {
                         "customer": "Samuel Olamide",
                         "email": "emmybunchgz@gmail.com",
@@ -263,7 +267,7 @@
                             "image_url": "https://pepperest.com/EscrowBackend/storage/products/430/1649243030.jpg",
                             "item_url": "https://pepperest.com/EscrowBackend/storage/products/430/1649243030.jpg",
                             "name": "Paradox Perfume",
-                            "unit_price": 2861,
+                            "unit_price": amount,
                             "quantity": 1
                         }
                     ]
